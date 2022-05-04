@@ -1,0 +1,14 @@
+1) If you want to use H2-DB
+    ==>first add h2 database dependency
+    then inside the application.properties file 
+    ==>spring.datasource.url=jdbc:h2:mem:testdb
+       spring.datasource.driverClassName=org.h2.Driver
+       spring.datasource.username=sa
+       spring.datasource.password=password
+       spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+    ==> after that check url and username
+       or copy url from application.properties file and paste 
+       of h2-console url
+       write down the password make connection.
+       *** If you don't change that url it will show username or password is incorrect
+       
